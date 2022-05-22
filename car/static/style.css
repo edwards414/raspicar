@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.text h2{
+    font-size: 4vw;
+    font-family: "標楷體";
+}
+.text p{
+    font-size: 3vw;
+    font-family: "標楷體";
+}
+.operate{
+    width: 85vw;
+    height: 500px;
+    border-radius: 50px;
+    background-color: #8e9bae;
+    padding: 10px 20px;
+    display: flex;
+    opacity: 0.9;
+    border: #f00 5px solid;
+    box-sizing: content-box;
+}
+.text{
+    display: flex;
+    width: 40vw;
+}
+.left-right-function{
+    width: 30vw;
+    height: 20vh;
+    border-radius: 50px;
+    box-shadow:0px 0px 30px rgba(61,80,252,4);
+    margin: auto;
+    background-color: #fff;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+.left-right{
+    width: 50vw;
+    height: 65vh;
+
+}
+.botton-area{
+    width: 50vw;
+}
+.botton{
+    margin: auto;
+    border: #000 2px solid;
+    background-color: #fff;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    color: #000;
+    font-weight: 500;
+    font-family: "標楷體";
+    font-size: 3vw;
+    text-align: center;
+    box-shadow: 0px 8px 0px 8px #221d1d; 
+    list-style: none;
+    border:#f00 5px solid;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.botton:active{
+background-color: rgb(188, 0, 0);
+box-shadow: 0 5px #666;
+box-shadow: 0px 8px 0px 5px #221d1d; 
+transform: translateY(6px);
+border:#0000FF 3px solid
+}
+.botton-area .botton{
+    margin: 1.5vh auto;
+}
+.other{
+    position:relative;
+    width: 50vw;
+    box-sizing: border-box;
+}
+.up{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 6vh;
+
+}
+.down{
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    width:50%;
+
+}
+.up .botton{
+    margin-top: 30px;
+}
