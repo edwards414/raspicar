@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>樹莓派車車操作介面</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <div class="operate">
+        <div class="text">
+            <botton type="botton" class="botton"  onclick="right()">左</botton>
+            <botton type="botton" class="botton"  onclick="middle()">中</botton>
+            <botton type="botton"  class="botton"  onclick="left()">右</botton>
+            <script>
+                function left(){
+                    window.location.href='left'
+                }   
+                function middle(){
+                    window.location.href='middle'
+                }   
+                function right(){
+                    window.location.href='right'
+                }   
+
+            </script>
+            </div>
+        <div class="other-function">
+            <div class="image-area">
+                <div class="img" id="pca1"><img src="{{url_for('static', filename='img/botton.png')}}" ></div> <!--前進-->
+                <div class="img" id="pca2"><img src="{{url_for('static', filename='img/botton.png')}}"></div> <!--後退-->
+                <div class="img" id="pca3"><img src="{{url_for('static', filename='img/botton.png')}}"></div> <!--停-->
+            </div>
+            <div class="botton-area">
+                <botton type="botton"  class="botton" id="pc1" onclick="changeimg1()">前進</botton>
+                <botton type="botton" class="botton" id="pc2" onclick="changeimg2()">後退</botton>
+                <botton type="botton"  class="botton" id="pc3" onclick="changeimg3()">停</botton>
+                <script src="{{url_for('static', filename='chp.js')}}"> </script>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
