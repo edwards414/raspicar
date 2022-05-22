@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>樹莓派車車操作介面</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+<style>
+    body{
+        background-image: url("{{url_for('static', filename='img/pgcar.jpeg')}}");
+        background-size:cover;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+    .text .botton:nth-of-type(1){
+        background-image: url("{{url_for('static', filename='img/left.png')}}");;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .text .botton:nth-of-type(3){
+        background-image: url("{{url_for('static', filename='img/right.png')}}");;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+</style>
+<body>
+    <div class="operate">
+        <div class="text">
+            <botton type="botton" class="botton"  onclick="right()"></botton>
+            <botton type="botton" class="botton"  onclick="middle()"></botton>
+            <botton type="botton"  class="botton"  onclick="left()"></botton>
+            <script>
+                function left(){
+                    window.location.href='left'
+                }   
+                function middle(){
+                    window.location.href='middle'
+                }   
+                function right(){
+                    window.location.href='right'
+                }   
+            </script>
+            </div>
+            <div class="other">
+    
+                <div class="down">
+                    <botton type="botton"  class="botton" id="pc3" onclick="changeimg3()">停</botton>
+                </div>
+                <div class="up">
+                    <botton type="botton"  class="botton" id="pc1" onclick="changeimg1()">前進</botton>
+                    <botton type="botton" class="botton" id="pc2" onclick="changeimg2()">後退</botton>
+                </div>
+            </div>    
+                       
+            <script > 
+            function changeimg1(){
+            window.location.href='run'
+            }   
+            function changeimg2(){
+                
+                window.location.href='back'
+            }   
+            function changeimg3(){
+            
+                window.location.href='stop'
+            }   
+            </script>
+            </div>
+    </div>
+</body>
+</html>
